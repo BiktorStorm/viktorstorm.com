@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Viktor Storm</title>
+  <meta name="description" content="Personal website of Viktor Storm.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#top">VS<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#interests">Interests</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Viktor Storm</h1>
+      <p class="lede">
+        I fly FPV drones, design PCBs and push bits through FPGAs.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">See my work</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div class="avatar" aria-hidden="true">VS</div>
+        <div>
+          <p>
+            Placeholder bio: a couple of sentences about who you are, what you do for a living,
+            and what you're curious about right now. Keep it human and short.
+          </p>
+          <p>
+            Second paragraph: where you're based, what you're currently working on,
+            or what kind of conversations you'd love to have.
+          </p>
+          <ul class="facts">
+            <li><span>📍</span> Based in — your city</li>
+            <li><span>💼</span> Currently — your role / company</li>
+            <li><span>📚</span> Reading — a book you like</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section id="interests" class="section">
+      <h2>Interests</h2>
+      <p class="section-lede">What I spend my time building and tinkering with.</p>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">🛸</div>
+          <h3>FPV drones</h3>
+          <p>Building, tuning and flying quads: frames, motors, flight controllers, and a lot of crash repairs.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🔲</div>
+          <h3>FPGAs</h3>
+          <p>Digital logic in hardware: Verilog/VHDL, timing closure, and turning ideas into gates.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🟩</div>
+          <h3>PCB design</h3>
+          <p>Schematics to layout to a board on the bench. Routing, stack-ups, and the joy of a first power-on.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <p class="section-lede">Selected things I've made or am making.</p>
+      <div class="projects">
+        <a class="project" href="#">
+          <div>
+            <h3>FPV build (placeholder)</h3>
+            <p>A quad you built: frame, components, and what you tuned to make it fly well.</p>
+          </div>
+          <ul class="tags"><li>FPV</li><li>Betaflight</li></ul>
+        </a>
+        <a class="project" href="#">
+          <div>
+            <h3>Custom board (placeholder)</h3>
+            <p>A PCB you designed, ideally with an FPGA on it, from schematic to working hardware.</p>
+          </div>
+          <ul class="tags"><li>KiCad</li><li>FPGA</li></ul>
+        </a>
+        <a class="project" href="#">
+          <div>
+            <h3>This website</h3>
+            <p>Hand-written HTML and CSS. No frameworks, no build step.</p>
+          </div>
+          <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2>Say hello</h2>
+      <p class="section-lede">The best way to reach me is by email.</p>
+      <a class="btn primary" href="mailto:me@viktorstorm.com">me@viktorstorm.com</a>
+      <div class="socials">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Viktor Storm</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
